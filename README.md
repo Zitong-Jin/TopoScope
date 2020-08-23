@@ -12,21 +12,16 @@ __Install Python dependencies__
 $ pip install --user -r requirements.txt
 ```
 __Download AS to Organization Mapping Dataset from CAIDA__
-
 https://www.caida.org/data/as-organizations/
 
 __Download PeeringDB Dataset from CAIDA__
-
 Before March 2016: http://data.caida.org/datasets/peeringdb-v1/
-    
 After March 2016: http://data.caida.org/datasets/peeringdb-v2/
 
 __Download Prefix2AS Dadaset from CAIDA__
-
 http://data.caida.org/datasets/routing/routeviews-prefix2as/
 
 __Prepare BGP paths from Route Views and RIS__
-
 You can prepare BGP paths from [BGPStream](https://bgpstream.caida.org/) or download rib file from [Route Views](http://archive.routeviews.org/) and RIS(http://data.ris.ripe.net/). 
 Noting that TopoScope only use IPv4 AS paths. Here is an example to extract AS paths from rib file:
 ```sh
@@ -41,12 +36,10 @@ if prefix:
 ```
 
 __Prepare BGP paths from Isolario__
-
 You can download rib file and extract AS paths from [Isolario](https://www.isolario.it/Isolario_MRT_data/).
 Noting that Isolario data is only used for hidden link inference in the IMC paper. But you can also use it for basic inference by yourself.
 
 ### Basic inference
-
 The ASes on each BGP path should be delimited by '|' on each line, for example, AS1|AS2|AS3.
 
 __Parse downloaded BGP paths__
@@ -70,11 +63,12 @@ $ python toposcope.py -o=<ASorg file> -p=<peeringdb file> -d=<temporary storage 
 
 __Output data format__
 \<provider-as\>|\<customer-as\>|-1 
+
 \<peer-as\>|\<peer-as\>|0 
+
 \<sibling-as\>|\<sibling-as\>|1
 
 ### Hidden link inference
-
 The ASes on each BGP path should be delimited by '|' on each line, followed by '&' and prefix, for example, AS1|AS2|AS3&prefix.
 
 __Parse downloaded BGP paths__
@@ -114,6 +108,7 @@ $ python linkRel.py
 
 __Output data format__
 \<provider-as\>|\<customer-as\>|-1 
+
 \<peer-as\>|\<peer-as\>|0 
 
 ## Contact 
