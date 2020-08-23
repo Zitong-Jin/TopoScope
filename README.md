@@ -4,7 +4,7 @@
 TopoScope is an AS relationship inference algorithm that combines ensemble learning and Bayesian networks. In addition, TopoScope also supports hidden link inference. You can learn more about TopoScope in IMC 2020.
 
 ## Quickstart
-To get started using TopoScope, clone or download this [GitHub repo](https://github.com/dkax/TopoScope).
+To get started using TopoScope, clone or download this [GitHub repo](https://github.com/Zitong-Jin/TopoScope).
 TopoScope runs with python 3.6.8
 
 __Install Python dependencies__
