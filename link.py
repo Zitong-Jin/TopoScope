@@ -27,7 +27,6 @@ class Links(object):
         self.vp = dict()
         self.ixp = defaultdict(int)
         self.facility = defaultdict(int)
-        self.prevlink = defaultdict(set)
         self.adjanceTypeRatio = dict()
         self.degreeRatio = dict()
         self.vppos = dict()

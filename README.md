@@ -26,13 +26,13 @@ Before March 2016: http://data.caida.org/datasets/peeringdb-v1/
 
 After March 2016: http://data.caida.org/datasets/peeringdb-v2/
 
-__Download Prefix2AS Dadaset from CAIDA__
+__Download Prefix2AS Dataset from CAIDA__
 
 http://data.caida.org/datasets/routing/routeviews-prefix2as/
 
 __Prepare BGP paths from Route Views and RIS__
 
-You can prepare BGP paths from [BGPStream](https://bgpstream.caida.org/) or download rib file from [Route Views](http://archive.routeviews.org/) and RIS(http://data.ris.ripe.net/). 
+You can prepare BGP paths from [BGPStream](https://bgpstream.caida.org/) or download rib file from [Route Views](http://archive.routeviews.org/) and [RIS](http://data.ris.ripe.net/). 
 
 Noting that TopoScope only use IPv4 AS paths. Here is an example to extract AS paths from rib file:
 
@@ -137,6 +137,10 @@ __Output data format__
 \<provider-as\>|\<customer-as\>|-1 
 
 \<peer-as\>|\<peer-as\>|0 
+
+__Example__
+
+You can download AS relationship inference result form 2017 to 2019 in /asrel/.
 
 ## Contact 
 
