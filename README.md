@@ -121,7 +121,7 @@ __Run Toposcope to find hidden links__
 
 ```sh
 $ python newlink.py -f=<prefix2AS file>
-# e.g. python cleanPrefix.py -f=pfx2as_2019.txt
+# e.g. python newlink.py -f=pfx2as_2019.txt
 # Output is written to 'futher0.txt' and 'futher1.txt'.
 ```
 
